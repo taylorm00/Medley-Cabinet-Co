@@ -1,51 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Medley Cabinet Co.</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>Medley Cabinet Co</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    .logo img {
+      width: 140px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .tagline {
+      margin-top: 10px;
+      opacity: 0.8;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: white;
+      color: black;
+    }
+
+    .secondary {
+      border: 1px solid white;
+      color: white;
+    }
+  </style>
+
 </head>
-<body class="bg-white text-gray-900">
 
-<header class="hero">
+<body>
 
-  <div class="hero-overlay"></div>
+  <header class="hero">
 
-  <div class="hero-content">
+    <div>
+      <div class="logo">
+        <img src="med_cab_co_logo.png" alt="Logo">
+      </div>
 
-    <!-- LOGO -->
-    <div class="hero-logo">
-      <img src="med_cab_co_logo.png" alt="Medley Cabinet Co Logo">
+      <h1>Medley Cabinet Co</h1>
+
+      <p class="tagline">
+        Cabinet installation, repairs & upgrades across DFW
+      </p>
+
+      <div class="buttons">
+        <a href="#services" class="btn primary">View Services</a>
+        <a href="#contact" class="btn secondary">Get a Quote</a>
+      </div>
+
     </div>
 
-    <!-- TEXT -->
-    <h1>Medley Cabinet Co</h1>
+  </header>
 
-    <p class="tagline">
-      Cabinet installation, repairs & upgrades across DFW
-    </p>
+</body>
 
-    <p class="subtext">
-      Custom craftsmanship. Clean installs. Built for lasting quality.
-    </p>
-
-    <!-- BUTTONS -->
-    <div class="hero-buttons">
-      <a href="#services" class="btn primary">View Services</a>
-      <a href="#contact" class="btn secondary">Get a Quote</a>
-    </div>
-
-    <!-- TRUST BADGES -->
-    <div class="badges">
-      <span>✔ DFW Local</span>
-      <span>✔ Custom Builds</span>
-      <span>✔ Repairs & Installs</span>
-    </div>
-
-  </div>
-
-</header>
+</html>
 
 <!-- SERVICES -->
 <section class="py-20 bg-gray-50">
